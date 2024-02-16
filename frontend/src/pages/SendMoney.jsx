@@ -18,7 +18,7 @@ export const SendMoney = () => {
           <div>
             <div>
               <div>
-                {/* <span>{name[0].toUpperCase()}</span> */}
+                <span>{name[0].toUpperCase()}</span>
               </div>
               <h3>{name}</h3>
             </div>
@@ -42,8 +42,12 @@ export const SendMoney = () => {
                     headers:{
                         Authorization:"Bearer "+localStorage.getItem("token")
                     }
-                })
+                }
+        
+                )
+                alert("Money transfered successfully")  
               }}>Initiate transfer</button>
+              
             </div>
           </div>
         </div>
